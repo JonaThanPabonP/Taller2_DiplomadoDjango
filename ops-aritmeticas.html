@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taller 2 - Operaciones Aritmeticas</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body id="body">
+
+    <h1>Fondo de la pagina</h1>
+    <div class="bg-color">
+      <div class="red">
+        <p>R</p>
+        <input type="range" id="slideRed" value="255" min="0" max="255" />
+      </div>
+      <div class="green">
+        <p>G</p>
+        <input type="range" id="slideGreen" value="255" min="0" max="255" />
+      </div>
+      <div class="blue">
+        <p>B</p>
+        <input type="range" id="slideBlue" value="255" min="0" max="255" />
+      </div>
+
+      <button type="button" onclick="fondo()">Cambiar fondo</button>
+    </div>
+    <hr />
+    <!-- ---------------------------------------- -->
+    <h1>Par o impar?</h1>
+    <p>Ingrese un numero para saber si es par o impar.</p>
+    <textarea id="ta-number" cols="10" rows="1"></textarea>
+    <br />
+    <button type="button" onclick="par()">Calcular</button>
+    <h2 id="res-par"></h2>
+
+    <hr />
+    <!-- ----------------------------------------- -->
+
+    <h1>Calculo de Finanzas</h1>
+    <p>Ingrese el valor del ingreso o del gasto.</p>
+
+    <textarea id="ta-valor" cols="10" rows="1"></textarea>
+
+    <br />
+    <button type="button" onclick="sumar()">Ingreso</button>
+    <button type="button" onclick="restar()">Gasto</button>
+
+    <h2>Balance:</h2>
+    <p id="total-finanzas">0</p>
+
+    <hr />
+    <!-- ----------------------------------------- -->
+
+    <h1>Calculo de Facturas</h1>
+    <p>Ingrese el valor de cada factura.</p>
+    <div class="luz">
+      Luz
+      <textarea id="ta-luz" cols="10" rows="1"></textarea>
+    </div>
+    <div class="agua">
+      Agua
+      <textarea id="ta-agua" cols="10" rows="1"></textarea>
+    </div>
+    <div class="gas">
+      Gas
+      <textarea id="ta-gas" cols="10" rows="1"></textarea>
+    </div>
+    <br />
+    <button type="button" onclick="factura()">Calcular</button>
+
+    <h2 id="total-facturas"></h2>
+
+    <!-- Script en JS -->
+    <script src="./script.js"></script>
+  </body>
+</html>
