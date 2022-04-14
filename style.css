@@ -6,6 +6,17 @@ h1, h2, p{
     margin: 0 0;
 }
 
+h1{
+    font-size: 3vw;
+}
+h2{
+    font-size: 2vw;
+}
+
+p{
+    font-size: 1.5vw;
+}
+
 .bg-color{
     display: flex;
     align-items: center;
@@ -18,3 +29,8 @@ h1, h2, p{
     margin: 10px 10px;
 }
 
+footer > p{
+    font-size: 8px;
+    display: flex;
+    justify-content: right;
+}

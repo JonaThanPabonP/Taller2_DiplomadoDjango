@@ -6,17 +6,18 @@ function fondo() {
     var color = "rgb("+red+","+green+","+blue+")";
     
     document.getElementById("body").style.backgroundColor = color;
+    console.log(color);
 }
 
 function par() {
   var num = document.getElementById("ta-number").value;
 
   if (num % 2 == 0) {
-    document.getElementById("res-par").innerHTML = "El numero es par";
-    console.log("El numero es par");
+    document.getElementById("res-par").innerHTML = "El número es par";
+    console.log("El número es par");
   } else {
-    document.getElementById("res-par").innerHTML = "El numero es impar";
-    console.log("El numero es impar");
+    document.getElementById("res-par").innerHTML = "El número es impar";
+    console.log("El número es impar");
   }
 }
 
